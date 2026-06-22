@@ -52,7 +52,7 @@ const Upload = ({ userRole }) => {
     const canvasRef = useRef(null);
 
     const GEMINI_API_KEY = import.meta.env.VITE_EXTERNAL_API_KEY;
-    console.log("Debug API Key:", GEMINI_API_KEY);
+
 
 
 
