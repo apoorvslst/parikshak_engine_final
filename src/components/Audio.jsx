@@ -419,7 +419,7 @@ const Audio = ({ userRole }) => {
         };
 
         // Standard Flow: Try Gemini 2.5 Flash -> Fallback to 1.5 Flash
-        let response = await fetchFromModel("gemini-2.5-flash-preview-09-2025");
+        let response = await fetchFromModel("gemini-2.5-flash");
 
         if (!response.ok) {
             const errText = await response.text();

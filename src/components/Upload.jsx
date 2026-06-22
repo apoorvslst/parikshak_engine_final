@@ -471,7 +471,7 @@ const Upload = ({ userRole }) => {
             }
 
             // --- 3. CALL GEMINI (Raw REST API) ---
-            const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${GEMINI_API_KEY}`;
+            const endpoint = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`;
             const resp = await fetch(endpoint, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
@@ -610,7 +610,7 @@ const Upload = ({ userRole }) => {
         }
         `;
 
-        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${GEMINI_API_KEY}`, {
+        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
@@ -721,7 +721,7 @@ const Upload = ({ userRole }) => {
             const audioPart = await fileToGenerativePart(fileToTranscribe);
             const prompt = "Generate a verbatim transcription of this audio. Output ONLY the raw text, no formatting, no timestamps, no speaker labels.";
 
-            const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${GEMINI_API_KEY}`, {
+            const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_API_KEY}`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
