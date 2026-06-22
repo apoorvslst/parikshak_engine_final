@@ -18,7 +18,7 @@ Parikshak AI watches a classroom lecture just like a human expert would, but wit
 ### 1. 📹 **Video Behavioral Analysis** (Computer Vision)
 We use computer vision to track the teacher's movements frame-by-frame:
 *   **Emotion Detection**: Are they smiling, neutral, or angry?
-*   **Gaze Tracking**: Are they maintaining eye contact or constantly reading from notes?
+*   **Gaze Tracking**: Are they maintaining eye contact or constantly reading from notes? denoting interaction with students
 *   **Posture & Gestures**: Are they standing confident or closed off? Are they using hand gestures to explain concepts?
 *   **Activity Tracking**: Detects when they are writing on the board vs. lecturing.
 
